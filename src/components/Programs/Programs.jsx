@@ -24,7 +24,7 @@ const Programs=()=>{
                          <span> {programs.details}</span>
                          <div className="join-now">
                             <span>Join Now</span>
-                            <img src="RightArrow" alt="" />
+                            <img src={RightArrow} alt="" />
                          </div>
                     </div>
                  ))
