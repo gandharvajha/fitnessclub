@@ -55,9 +55,14 @@
     width:80%;
 
 }
+.figures {
+    display: flex;
+    gap: 2rem;
+}
 .figures>div{
     display:flex;
     flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
 }
 .figures>div>span:nth-of-type(1){
     color:#ffffff;
@@ -151,4 +156,67 @@
     color:white;
     font-size:1.5rem;
 }
+.hero-blur{
+    width:22rem;
+    height:30rem;
+    left:0;
+}
 
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .hero-text{
+      font-size: 3rem !important;
+      gap:0rem;
+    }
+    .hero_image {
+        top: 15rem !important;
+        right: 2rem !important;
+        width: 13rem !important;
+    }
+  .figures>div>span:nth-of-type(1){
+    font-size: 1.2rem;
+  }
+  .heart-rate{
+    display: none;
+  }
+  .calories{
+    top: 6rem;
+    right: 10rem;
+  }
+  .hero_image_back {
+    top: 4rem;
+    right: 4rem;
+    width: 14rem;
+}
+  
+  }
+
+
+  @media only screen and (max-width: 576px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text {
+        font-size: 2.5rem;
+    }
+    .the-best-ad {
+        margin-top: 1rem;
+    }
+    .hero_image {
+        top: 4rem;
+        right: 0rem;
+        width: 14rem;
+    }
+    .hero_image_back {
+        top: 3rem;
+        right: 8rem;
+        width: 12rem;
+    }
+    .calories {
+        display: block;
+        top: 2rem;
+        right: 13rem;
+    }
+    .hero-blur {
+        width: 14rem;
+    }
+  }
